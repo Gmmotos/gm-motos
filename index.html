@@ -13,7 +13,6 @@ body {
     color: white;
 }
 
-/* HEADER */
 header {
     background: black;
     padding: 15px;
@@ -21,7 +20,6 @@ header {
     border-bottom: 3px solid orange;
 }
 
-/* HERO */
 .hero {
     background: url('local.jpg') center/cover no-repeat;
     height: 90vh;
@@ -33,12 +31,10 @@ header {
 
 .hero div {
     background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(5px);
     padding: 30px;
     border-radius: 10px;
 }
 
-/* BOTONES */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -48,17 +44,15 @@ header {
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #ff8800;
-    transform: scale(1.05);
-}
-
-/* SERVICIOS */
-.servicios {
+.servicios, .porque, .galeria, .contacto {
     padding: 40px 20px;
+}
+
+.porque {
+    background: #111;
+    text-align: center;
 }
 
 .lista {
@@ -71,33 +65,10 @@ header {
     background: #1a1a1a;
     padding: 15px;
     border-left: 4px solid orange;
-    transition: 0.3s;
 }
 
-.item:hover {
-    transform: translateY(-5px);
-    background: #222;
-}
-
-/* POR QUE ELEGIRNOS */
-.porque {
-    padding: 40px 20px;
-    background: #111;
-    text-align: center;
-}
-
-.porque h2 {
-    margin-bottom: 30px;
-}
-
-/* GALERIA */
 .galeria {
-    padding: 40px 20px;
     background: #111;
-}
-
-.galeria h2 {
-    text-align: center;
 }
 
 .grid {
@@ -109,16 +80,12 @@ header {
 .grid img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-/* CONTACTO */
 .contacto {
     text-align: center;
-    padding: 40px;
 }
 
-/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -127,146 +94,9 @@ header {
     color: white;
     padding: 15px;
     border-radius: 50%;
-    font-size: 20px;
     text-decoration: none;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: black;
-}
-</style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0a0a0a;
-    color: white;
-}
-
-/* HEADER */
-header {
-    background: black;
-    padding: 15px;
-    text-align: center;
-    border-bottom: 3px solid orange;
-}
-
-/* HERO */
-.hero {
-    background: url('local.jpg') center/cover no-repeat;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero div {
-    background: rgba(0,0,0,0.8);
-    backdrop-filter: blur(5px);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 15px 25px;
-    background: orange;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ff8800;
-    transform: scale(1.05);
-}    display: inline-block;
-    margin-top: 15px;
-    padding: 15px 25px;
-    background: orange;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-/* SERVICIOS */
-.servicios {
-    padding: 40px 20px;
-}
-
-.lista {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.item {
-    background: #1a1a1a;
-    padding: 15px;
-    border-left: 4px solid orange;
-    transition: 0.3s;
-}
-
-.item:hover {
-    transform: translateY(-5px);
-    background: #222;
-}
-    background: #1a1a1a;
-    padding: 15px;
-    border-left: 4px solid orange;
-}
-
-/* GALERIA */
-.galeria {
-    padding: 40px 20px;
-    background: #111;
-}
-
-.galeria h2 {
-    text-align: center;
-}
-
-.grid img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-}
-
-.grid img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* CONTACTO */
-.contacto {
-    text-align: center;
-    padding: 40px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-/* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
@@ -284,16 +114,20 @@ footer {
 
 <section class="hero">
     <div>
-     <h2>Servicio técnico especializado en motos</h2>
-<p>Calidad, experiencia y compromiso en cada trabajo</p>
-        <a class="btn" href="https://wa.me/5491133798105?text=Hola%20GM%20Motos,%20quiero%20consultar%20por%20un%20service">RESERVÁ TU TURNO</a>
+        <h2>Servicio técnico especializado en motos</h2>
+        <p>Calidad, experiencia y compromiso en cada trabajo</p>
+        <a class="btn" href="https://wa.me/5491133798105?text=Hola%20GM%20Motos,%20quiero%20consultar%20por%20mi%20moto">
+            RESERVÁ TU TURNO
+        </a>
     </div>
+</section>
+
 <section class="porque">
     <h2>¿Por qué elegir GM Motos?</h2>
     <div class="lista">
         <div class="item">✔ Atención personalizada</div>
         <div class="item">✔ Diagnóstico preciso</div>
-        <div class="item">✔ Experiencia en múltiples marcas</div>
+        <div class="item">✔ Experiencia multimarca</div>
         <div class="item">✔ Transparencia en cada trabajo</div>
         <div class="item">✔ Repuestos de calidad</div>
         <div class="item">✔ Compromiso con cada cliente</div>
@@ -329,9 +163,9 @@ footer {
     <h2>Contacto</h2>
     <p>📍 Av. Cobo 601</p>
     <p>📲 11 3379-8105</p>
+    <p>🕒 Lunes a Viernes de 9 a 18 hs</p>
 </section>
 
-<a class="whatsapp" href="https://wa.me/5491133798105?text=Hola%20GM%20Motos,%20quiero%20hacer%20una%20consulta">💬</a>
 <section>
     <h2 style="text-align:center;">Dónde estamos</h2>
     <iframe 
@@ -340,14 +174,20 @@ footer {
         height="300" 
         style="border:0;">
     </iframe>
+</section>
+
 <section style="text-align:center; padding:40px;">
     <h2>¿Listo para dejar tu moto en manos expertas?</h2>
     <a class="btn" href="https://wa.me/5491133798105?text=Hola%20GM%20Motos,%20quiero%20hacer%20una%20consulta">
         SOLICITAR TURNO
     </a>
 </section>
+
+<a class="whatsapp" href="https://wa.me/5491133798105?text=Hola%20GM%20Motos,%20quiero%20hacer%20una%20consulta">💬</a>
+
 <footer>
     <p>© GM Motos</p>
-</
+</footer>
+
 </body>
 </html>
