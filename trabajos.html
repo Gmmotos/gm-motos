@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trabajos | GM Motos</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0a0a0a;
+    color: white;
+}
+
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid orange;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid img, .grid video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 25px;
+    background: orange;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Trabajos GM Motos</h1>
+</header>
+
+<h2>Fotos y videos reales</h2>
+
+<div class="grid">
+    <img src="motor1.jpg">
+    <img src="motor2.jpg">
+    <video controls src="video1.mp4"></video>
+</div>
+
+<div style="text-align:center;">
+    <a class="btn" href="index.html">VOLVER</a>
+</div>
+
+</body>
+</html>
